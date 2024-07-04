@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a new cafe</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXM_abQF0POMSrOnwHGjmJdfcM0hWQhcP3g&s">
+    <style>
+        body {
+            color: white;
+            background-color: black;
+        }
+        input,select {
+            border-radius: 20%;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add a new cafe into the database</h1>
+    <form action="/adding_new" method="POST">
+        <label>Cafe name
+            <input type="text" id="name" name="name"> 
+        </label>
+        <label>Cafe Location on Google Maps (URL)
+            <input type="text" name="Location">
+        </label>
+        <label>Opening Time e.g. 8AM
+            <input type="text" name="Open">
+        </label>
+        <label>Closing Time e.g. 5:30PM
+            <input type="text" name="Close">
+        </label>
+        <label>Coffee Rating
+            <select name="Coffee">
+                <option name="Coffee">☕</option>
+                <option name="Coffee">☕☕</option>
+                <option name="Coffee">☕☕☕</option>
+                <option name="Coffee">☕☕☕☕</option>
+                <option name="Coffee">☕☕☕☕☕</option>
+            </select>
+        </label>
+        <label>WIFI Strength Rating
+            <select name="Wifi">
+                <option name="Wifi">🦾</option>
+                <option name="Wifi">🦾🦾</option>
+                <option name="Wifi">🦾🦾🦾</option>
+                <option name="Wifi">🦾🦾🦾🦾</option>
+                <option name="Wifi">🦾🦾🦾🦾🦾</option>
+            </select>
+        </label>
+        <label>Power Socket Availability
+            <select name="Power">
+                <option name="Power">🔌</option>
+                <option name="Power">🔌🔌</option>
+                <option name="Power">🔌🔌🔌</option>
+                <option name="Power">🔌🔌🔌🔌</option>
+                <option name="Power">🔌🔌🔌🔌🔌</option>
+            </select>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
